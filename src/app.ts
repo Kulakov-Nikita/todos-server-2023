@@ -11,7 +11,7 @@ export const app = express()
 app.use(cookieParser())
 app.use(express.json())
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+app.use(cors({ credentials: true, origin: 'https://the-most-fucking-awesome-lab-in-the-world.ru:3000/' }))
 app.use('/api/users', usersRouter)
 app.use('/api/todos', todosRouter)
 
