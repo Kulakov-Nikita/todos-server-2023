@@ -1,0 +1,154 @@
+/* [project]/components/TodoCard/TodoCard.css [app-client] (css) */
+.todo-card {
+  background-color: var(--card-bg-color);
+  border-radius: .25rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92%;
+}
+
+.btn-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-icon svg {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+}
+
+.card-icons {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-icons .btn-icon:not(:first-child) {
+  margin-top: 10px;
+}
+
+.status-done {
+  color: var(--done-color);
+}
+
+.status-undone {
+  color: var(--not-done-color);
+}
+
+.card-title, .card-desc {
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-desc-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+
+/* [project]/components/Filters/Filters.css [app-client] (css) */
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.filters-form .card-status-select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input-container label {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+
+/* [project]/components/TodoList/TodoList.css [app-client] (css) */
+.todo-list {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.todo-list-container {
+  margin-left: 15px;
+  width: 80%;
+}
+
+.todo-list {
+  scrollbar-color: var(--card-bg-color) transparent;
+  scrollbar-width: thin;
+}
+
+.todo-card:not(:first-child) {
+  margin-top: 10px;
+}
+
+.create-card-btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+/* [project]/components/Theme/ThemeSwitcher/ThemeSwitcher.css [app-client] (css) */
+.light-theme .lucide-sun {
+  opacity: 0;
+}
+
+.dark-theme .lucide-moon {
+  opacity: 0;
+}
+
+.theme-switcher {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.theme-switcher svg {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+}
+
+
+/* [project]/components/PageTitle/PageTitle.css [app-client] (css) */
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*# sourceMappingURL=components_fb7ab4._.css.map*/

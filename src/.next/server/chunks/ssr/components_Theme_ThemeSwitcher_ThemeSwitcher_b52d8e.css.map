@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/components/Theme/ThemeSwitcher/ThemeSwitcher.css"],"sourcesContent":[".light-theme .lucide-sun {\r\n\topacity: 0;\r\n}\r\n\r\n.dark-theme .lucide-moon {\r\n\topacity: 0;\r\n}\r\n\r\n.theme-switcher {\r\n\twidth: 2.5rem;\r\n\theight: 2.5rem;\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: center;\r\n\tpadding: 0;\r\n\tbackground-color: transparent;\r\n\tborder: none;\r\n\toutline: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.theme-switcher svg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcolor: var(--text-color);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;AAIA;;;;;;;;;;;;;AAaA"}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

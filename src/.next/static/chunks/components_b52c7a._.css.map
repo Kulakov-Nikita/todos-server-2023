@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://F%3A/web_lab4/components/NewCardForm/NewCardForm.css"],"sourcesContent":[".form-container {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n.form-container .custom-btn {\r\n\tmargin-top: 7px;\r\n}\r\n\r\n.form-input-container {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n.form-input-container {\r\n\tmargin-top: 5px;\r\n\tmargin-bottom: 8px;\r\n}\r\n\r\n.form-input-container label {\r\n\tmargin-bottom: 8px;\r\n\tfont-size: 1.5rem;\r\n}\r\n\r\n.custom-input,\r\n.custom-textarea {\r\n\tcolor: var(--text-color);\r\n\tbackground-color: var(--input-bg-color);\r\n\tborder: none;\r\n\tborder-radius: 0.25rem;\r\n\tpadding: 0.5rem;\r\n\tfont-size: 1rem;\r\n\tcursor: pointer;\r\n\toutline: none;\r\n}\r\n\r\n.custom-textarea {\r\n\theight: 150px;\r\n\tresize: none;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;AAIA;;;;;AAKA;;;;;AAKA;;;;;AAKA;;;;;;;;;;;AAYA"}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file://F%3A/web_lab4/components/Theme/ThemeSwitcher/ThemeSwitcher.css"],"sourcesContent":[".light-theme .lucide-sun {\r\n\topacity: 0;\r\n}\r\n\r\n.dark-theme .lucide-moon {\r\n\topacity: 0;\r\n}\r\n\r\n.theme-switcher {\r\n\twidth: 2.5rem;\r\n\theight: 2.5rem;\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: center;\r\n\tpadding: 0;\r\n\tbackground-color: transparent;\r\n\tborder: none;\r\n\toutline: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.theme-switcher svg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcolor: var(--text-color);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;AAIA;;;;;;;;;;;;;AAaA"}},
+    {"offset": {"line": 69, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 72, "column": 0}, "map": {"version":3,"sources":["file://F%3A/web_lab4/components/PageTitle/PageTitle.css"],"sourcesContent":[".page-title {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\talign-items: center;\r\n}\r\n"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 77, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

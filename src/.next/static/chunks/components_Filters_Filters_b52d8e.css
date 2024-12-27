@@ -1,0 +1,19 @@
+/* [project]/components/Filters/Filters.css [app-client] (css) */
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.filters-form .card-status-select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input-container label {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=components_Filters_Filters_b52d8e.css.map*/

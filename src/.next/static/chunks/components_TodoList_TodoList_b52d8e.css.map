@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/components/TodoList/TodoList.css"],"sourcesContent":[".todo-list {\r\n\theight: 80vh;\r\n\toverflow-y: auto;\r\n}\r\n\r\n.todo-list-container {\r\n\tmargin-left: 15px;\r\n\twidth: 80%;\r\n}\r\n\r\n.todo-list {\r\n\tscrollbar-color: var(--card-bg-color) transparent;\r\n\tscrollbar-width: thin;\r\n}\r\n\r\n.todo-card:not(:first-child) {\r\n\tmargin-top: 10px;\r\n}\r\n\r\n.create-card-btn {\r\n\twidth: 100%;\r\n\tmargin-top: 15px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;AAKA;;;;;AAKA;;;;AAIA"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

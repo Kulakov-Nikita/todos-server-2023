@@ -1,0 +1,87 @@
+/* [project]/styles/globals.css [app-client] (css) */
+.light-theme {
+  --bg-color: #fff;
+  --card-bg-color: #afafaf;
+  --text-color: #353535;
+  --btn-color: #b8cfff;
+  --input-bg-color: #afafaf;
+  --select-bg-color: #afafaf;
+  --done-color: #090;
+  --not-done-color: #c20000;
+}
+
+.dark-theme {
+  --bg-color: #1b1b1b;
+  --card-bg-color: #646464;
+  --text-color: #fff;
+  --btn-color: #3574fa;
+  --input-bg-color: #646464;
+  --select-bg-color: #646464;
+  --done-color: #5dff5d;
+  --not-done-color: #ff5858;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.inline-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.custom-btn, .small-custom-btn {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+}
+
+.custom-btn {
+  font-size: 1.25rem;
+}
+
+.small-custom-btn {
+  font-size: .9rem;
+}
+
+.custom-btn:disabled {
+  background-color: #ccc;
+}
+
+.custom-btn:focus {
+  outline: none;
+}
+
+.close-btn {
+  width: 30px;
+}
+
+.custom-select {
+  font-size: 1rem;
+  background-color: var(--select-bg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: .25rem;
+  outline: none;
+  padding: .5rem;
+}
+
+/*# sourceMappingURL=styles_globals_b52d8e.css.map*/

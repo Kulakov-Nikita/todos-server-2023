@@ -2,7 +2,7 @@ import { Router } from 'express'
 import db from '@/db'
 import { querySchema } from '@/lib/genericValidators'
 import { verifyToken } from '@/auth'
-import { todoCreateSchema } from './todosValidators'
+import { todoCreateSchema, todoUpdateSchema } from './todosValidators'
 
 const todosRouter = Router()
 
@@ -32,5 +32,34 @@ todosRouter.post('/', verifyToken, async (req, res) => {
   })
   res.json(todo)
 })
+
+todosRouter.put('/:id', verifyToken, async (req, res) => {
+  const userId = req.body.user?.id
+  const todoId = req.params.id
+  const updates = await todoUpdateSchema.parseAsync(req.body)
+
+  const existingTodo = await db.todo.findUnique({
+    where: {
+      id: todoId,
+      userId,
+    },
+  })
+
+  if (!existingTodo) {
+    return res.status(404).json({ message: 'Todo not found' })
+  }
+
+  const todo = await db.todo.update({
+    where: {
+      id: todoId,
+      userId,
+    },
+    data: updates,
+  })
+
+  res.json(todo)
+})
+
+
 
 export default todosRouter

@@ -1,0 +1,26 @@
+/* [project]/components/TodoList/TodoList.css [app-client] (css) */
+.todo-list {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.todo-list-container {
+  margin-left: 15px;
+  width: 80%;
+}
+
+.todo-list {
+  scrollbar-color: var(--card-bg-color) transparent;
+  scrollbar-width: thin;
+}
+
+.todo-card:not(:first-child) {
+  margin-top: 10px;
+}
+
+.create-card-btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=components_TodoList_TodoList_b52d8e.css.map*/

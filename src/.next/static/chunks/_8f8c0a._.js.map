@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://F%3A/web_lab4/components/Theme/ThemeProvider.tsx"],"sourcesContent":["\"use client\"\r\nimport { ThemeProvider as NextThemeProvider } from \"next-themes\"\r\nimport { useEffect, useState } from \"react\"\r\n\r\nexport default function ThemeProvider({\r\n\tchildren,\r\n}: {\r\n\tchildren: React.ReactNode\r\n}) {\r\n\tconst [mounted, setMounted] = useState(false)\r\n\tuseEffect(() => setMounted(true), [])\r\n\r\n\tif (!mounted) return null\r\n\r\n\treturn <NextThemeProvider attribute=\"class\">{children}</NextThemeProvider>\r\n}\r\n"],"names":[],"mappings":";;;;AACA;AACA;;;AAFA;;;AAIe,SAAS,cAAc,EACrC,QAAQ,EAGR;;IACA,MAAM,CAAC,SAAS,WAAW,GAAG,CAAA,GAAA,6JAAA,CAAA,WAAQ,AAAD,EAAE;IACvC,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;mCAAE,IAAM,WAAW;kCAAO,EAAE;IAEpC,IAAI,CAAC,SAAS,OAAO;IAErB,qBAAO,6LAAC,mJAAA,CAAA,gBAAiB;QAAC,WAAU;kBAAS;;;;;;AAC9C;GAXwB;KAAA"}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

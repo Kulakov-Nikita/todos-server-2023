@@ -1,0 +1,80 @@
+/* [project]/components/NewCardForm/NewCardForm.css [app-client] (css) */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .custom-btn {
+  margin-top: 7px;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-container {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.form-input-container label {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.custom-input, .custom-textarea {
+  color: var(--text-color);
+  background-color: var(--input-bg-color);
+  border: none;
+  border-radius: .25rem;
+  padding: .5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom-textarea {
+  height: 150px;
+  resize: none;
+}
+
+
+/* [project]/components/Theme/ThemeSwitcher/ThemeSwitcher.css [app-client] (css) */
+.light-theme .lucide-sun {
+  opacity: 0;
+}
+
+.dark-theme .lucide-moon {
+  opacity: 0;
+}
+
+.theme-switcher {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.theme-switcher svg {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+}
+
+
+/* [project]/components/PageTitle/PageTitle.css [app-client] (css) */
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*# sourceMappingURL=components_b52c7a._.css.map*/

@@ -1,0 +1,88 @@
+
+.light-theme {
+    --bg-color: #dce3ea; /* Светло-серый с голубым подтоном */
+    --card-bg-color: linear-gradient(135deg, #cfd8dc, #e8eaf6, #f1f8ff); /* Градиент серого и мягкого голубого */
+    --text-color: #2f2f2f; /* Тёмно-серый текст */
+    --btn-color: #bfa6ff; /* Приглушённый светло-фиолетовый */
+    --input-bg-color: #e0e5ec; /* Светло-серый фон для полей ввода */
+    --select-bg-color: #d3dae3; /* Немного затемнённый серый для селектов */
+    --done-color: #4caf50; /* Мягкий зелёный */
+    --not-done-color: #ff6f61; /* Светло-красный */
+}
+
+
+.dark-theme {
+    --bg-color: #0d0f1a; /* Тёмный синий */
+    --card-bg-color: linear-gradient(135deg, #ff0080, #ff66ff, #00c8ff);
+    --text-color: #ffffff;
+    --btn-color: #ff66ff;
+    --input-bg-color: #1a1c2e;
+    --select-bg-color: #262947;
+    --done-color: #00ffea;
+    --not-done-color: #ff3366;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.01s ease, background-image 10s ease;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	height: 100vh;
+	padding: 2rem;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.inline-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.custom-btn,
+.small-custom-btn {
+	background-color: var(--btn-color);
+	color: var(--text-color);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 5px;
+	outline: none;
+}
+
+.custom-btn {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px var(--btn-color);
+}
+
+.custom-btn:hover {
+    background-color: var(--not-done-color);
+    box-shadow: 0 0 15px var(--not-done-color);
+}
+
+.custom-select,
+input {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--select-bg-color);
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--select-bg-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+

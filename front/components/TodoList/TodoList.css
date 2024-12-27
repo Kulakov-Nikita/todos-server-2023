@@ -1,0 +1,111 @@
+.todo-list {
+	height: 80vh;
+	overflow-y: auto;
+  }
+  
+  .todo-list-container {
+	margin-left: 15px;
+	width: 80%;
+  }
+  
+  .todo-list {
+	scrollbar-color: var(--card-bg-color) transparent;
+	scrollbar-width: thin;
+  }
+  
+  /* Карточки задач */
+  .todo-card {
+	display: flex;
+	flex-direction: column; /* Элементы внутри карточки идут по вертикали */
+	justify-content: space-between; /* Расстояние между элементами карточки */
+	align-items: center; /* Центрируем контент по вертикали */
+	padding: 15px;
+	border: 2px solid transparent;
+	transition: border-color 0.3s ease, background-color 0.3s ease;
+	margin-top: 10px;
+	border-radius: 8px;
+	text-align: center;
+	width: 100%;
+	max-height: 300px;
+	height: auto;
+  }
+  
+  .todo-card:hover {
+	border-color: var(--btn-color); /* Подсветка при наведении */
+	background-color: var(--card-bg-color); /* Подсветка фона */
+  }
+  
+  .todo-card:not(:first-child) {
+	margin-top: 10px;
+  }
+  
+  .create-card-btn {
+	width: 100%;
+	margin-top: 15px;
+  }
+  
+  /* Контейнер для кнопок (горизонтальное расположение) */
+  .card-icons {
+	display: flex;
+	gap: 10px; /* Расстояние между кнопками */
+	margin-top: 10px;
+	justify-content: center; /* Центрируем кнопки по горизонтали */
+	align-items: center; /* Выравниваем кнопки по вертикали */
+	width: 100%; /* Контейнер кнопок занимает всю ширину карточки */
+	flex-wrap: nowrap; /* Убираем перенос кнопок */
+  }
+  
+  /* Стили для кнопок */
+  .btn-icon {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	color: var(--text-color); /* Цвет текста кнопок соответствует основному тексту */
+	background-color: var(--btn-color); /* Основной цвет фона кнопок */
+	width: auto; /* Кнопки имеют ширину по содержимому */
+	box-sizing: border-box;
+	display: flex; /* Убираем лишние блоки и используем flex для выравнивания */
+	justify-content: center; /* Центрируем контент кнопки */
+	align-items: center; /* Центрируем контент кнопки по вертикали */
+	text-align: center; /* Для текста внутри кнопки */
+  }
+  
+  .edit-btn {
+	background-color: var(--btn-color); /* Цвет кнопки редактирования */
+  }
+  
+  .remove-btn {
+	background-color: var(--btn-color); /* Цвет кнопки удаления */
+  }
+  
+  .btn-icon:hover {
+	background-color: var(--not-done-color); /* Цвет кнопки при наведении */
+	box-shadow: 0 0 5px var(--not-done-color);
+  }
+  
+  .btn-icon:active {
+	background-color: var(--select-bg-color); /* Цвет кнопки при нажатии */
+  }
+  
+  /* Стили для активной кнопки */
+  .filter-button.active {
+	background-color: var(--done-color); /* Цвет активной кнопки */
+	color: white;
+  }
+  
+  .todo-list::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  .todo-list::-webkit-scrollbar-thumb {
+	background-color: var(--card-bg-color);
+	border-radius: 10px;
+  }
+  
+  .todo-list::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
