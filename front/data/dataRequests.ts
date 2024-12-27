@@ -1,5 +1,7 @@
 import { CardData } from "@/components/TodoCard/CardData"
 
+
+
 export async function getCards() {
 	// const ans = await fetch("http://localhost:3030/api/users/login", {
 	// 	method: "POST",
@@ -23,7 +25,7 @@ export async function getCards() {
 	// } else {
 	// 	return (await response.json()).cards
 	// }
-	const response = await await fetch("http://localhost:3030/api/todos", {
+	const response = await await fetch("https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/todos", {
 		credentials: "include"
 	})
 	if (!response.ok) {
@@ -46,7 +48,7 @@ export async function getCards() {
 }
 
 export async function getCardsWithFilter(filter: string) {
-	const response = await await fetch("http://localhost:3030/api/todos", {
+	const response = await await fetch("https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/todos", {
 		credentials: "include"
 	})
 	if (!response.ok) {
@@ -71,7 +73,7 @@ export async function getCardsWithFilter(filter: string) {
 }
 
 export async function getCardById(id: number) {
-	const response = await await fetch("http://localhost:3030/api/todos", {
+	const response = await await fetch("https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/todos", {
 		credentials: "include"
 	})
 	if (!response.ok) {
@@ -92,7 +94,7 @@ export async function getCardById(id: number) {
 
 export async function editCard(newCard: CardData): Promise<void> {
 	try {
-		const response = await fetch(`http://localhost:3030/api/todos/${newCard.id}`, {
+		const response = await fetch(`https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/todos/${newCard.id}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
@@ -124,7 +126,7 @@ export async function createCard(newCard: CardData) {
 	const cards = await getCards()
 	newCard.id = cards.length + 1
 
-	const response = await fetch(`http://localhost:3030/api/todos/`, {
+	const response = await fetch(`https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/todos/`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

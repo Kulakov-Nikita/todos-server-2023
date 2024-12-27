@@ -25,7 +25,7 @@ export default function LoginForm() {
 	async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault()
 		
-		const response = await fetch("http://localhost:3030/api/users/signup", {
+		const response = await fetch("https://the-most-fucking-awesome-lab-in-the-world.ru:3030/api/users/signup", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
